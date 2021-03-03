@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="523.0" prefWidth="853.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="FormulaireController">
+   <children>
+      <Pane prefHeight="546.0" prefWidth="128.0" style="-fx-background-color: #A882C1;" />
+      <TextField layoutX="128.0" layoutY="102.0" prefHeight="31.0" prefWidth="251.0" promptText="Prenom" />
+      <TextField layoutX="419.0" layoutY="102.0" prefHeight="31.0" prefWidth="251.0" promptText="Nom" />
+      <Label layoutX="128.0" layoutY="22.0" prefHeight="47.0" prefWidth="311.0" text="Service demandé" textFill="#a782bf">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="128.0" layoutY="147.0" prefHeight="180.0" prefWidth="620.0" promptText="Le service" />
+      <DatePicker layoutX="128.0" layoutY="346.0" prefHeight="31.0" prefWidth="232.0" promptText="Date limite" />
+      <TextField layoutX="128.0" layoutY="405.0" prefHeight="31.0" prefWidth="232.0" promptText="Numéro de télephone" />
+      <Button layoutX="704.0" layoutY="462.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="135.0" style="-fx-background-color: #a782bf;" text="Envoyer" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="149.0" layoutY="462.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="135.0" style="-fx-background-color: #a782bf;" text="Retour">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
