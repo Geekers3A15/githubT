@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>src/controllers/profilController.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>96</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/W:/githubT-sawssengharbi/src/controllers/profilController.java</file>
+            <file>file:/W:/githubT-sawssengharbi/src/controllers/modifierProfilController.java</file>
+            <file>file:/W:/githubT-sawssengharbi/src/services/userService.java</file>
+            <file>file:/W:/githubT-sawssengharbi/src/views/weblog.fxml</file>
+            <file>file:/W:/githubT-sawssengharbi/src/views/profil.fxml</file>
+            <file>file:/W:/githubT-sawssengharbi/src/views/modifierProfil.fxml</file>
+            <file>file:/W:/githubT-sawssengharbi/src/entités/user.java</file>
+        </group>
+    </open-files>
+</project-private>
