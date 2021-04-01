@@ -5,7 +5,7 @@
  */
 package artcom;
 
-import entités.weblog;
+import Entités.weblog;
 import java.io.IOException;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
@@ -15,7 +15,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import services.weblogService;
+import Service.weblogService;
 
 /**
  *
@@ -26,7 +26,7 @@ public class Artcom  extends Application {
      @Override
     public void start(Stage primaryStage) throws IOException {
         
-        FXMLLoader laoder = new FXMLLoader(getClass().getResource("/views/profil.fxml"));
+        FXMLLoader laoder = new FXMLLoader(getClass().getResource("/views/test.fxml"));
         Parent root = laoder.load();
         
         //primaryStage.initStyle(StageStyle.UNDECORATED);

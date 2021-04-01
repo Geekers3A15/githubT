@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.weblogController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="633.0" prefWidth="345.0">
+         <children>
+            <BorderPane prefHeight="633.0" prefWidth="324.0">
+               <left>
+                  <VBox prefHeight="633.0" prefWidth="324.0" style="-fx-background-color: #A882C1;" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/woman.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label>
+                                       <font>
+                                          <Font name="System Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="nomPrenomLabel" text="Bienvenue NomPrenom">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="pseudLabelAlt" text="\@pseduo">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="63.0" prefWidth="324.0">
+                           <children>
+                              <ImageView fitHeight="41.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@../assets/user.png" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Profil">
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="8.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="63.0" prefWidth="324.0">
+                           <children>
+                              <ImageView fitHeight="43.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@../assets/gear.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="modifierProfil" onMouseClicked="#handle_modfierProfil" text="Modifier le profil">
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="8.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="63.0" prefWidth="324.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets left="35.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@../assets/image.png" />
+                                 </image>
+                              </ImageView>
+                              <Label onMouseClicked="#handle_weblog" text="Weblog">
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="8.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="listeCommandes" onMouseClicked="#handle_listeCommandes" prefHeight="63.0" prefWidth="324.0">
+                           <children>
+                              <ImageView fitHeight="42.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@../assets/shopping-cart.png" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Liste commandes">
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="8.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="63.0" prefWidth="324.0">
+                           <children>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@../assets/add.png" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Ajouter prod artistique">
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="8.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </left>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0">
+         <children>
+            <Text layoutX="251.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mes weblogs">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfchercher" layoutX="20.0" layoutY="134.0" prefHeight="25.0" prefWidth="244.0" promptText="chercher weblog" />
+            <ImageView fx:id="chercher" fitHeight="34.0" fitWidth="35.0" layoutX="273.0" layoutY="130.0" onMouseClicked="#handle_Chercher" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/search.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="ajoutWeblog" layoutX="610.0" layoutY="100.0" onMouseClicked="#handle_ajoutWeblog" prefHeight="34.0" prefWidth="144.0" text="Ajouter un weblog">
+               <font>
+                  <Font size="15.0" />
+               </font></Hyperlink>
+            <VBox fx:id="idvWeblog" layoutX="20.0" layoutY="171.0" prefHeight="458.0" prefWidth="746.0">
+               <children>
+                  <ScrollPane fx:id="idScrollpane" prefHeight="458.0" prefWidth="746.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="461.0" prefWidth="743.0">
+                           <children>
+                              <GridPane fx:id="idGridPane">
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <Button fx:id="Afficherbtn" layoutX="610.0" layoutY="135.0" mnemonicParsing="false" onMouseClicked="#handle_afficherBtn" text="Afficher les weblogs" visible="false" />
+         </children></AnchorPane>
+   </items>
+</SplitPane>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<VBox fx:id="idBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="177.0" prefWidth="223.0" style="-fx-background-color: #A882C1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GestionCardWeblogController">
+   <children>
+      <HBox prefHeight="98.0" prefWidth="230.0">
+         <children>
+            <ImageView fx:id="idImg" fitHeight="52.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../assets/name.png" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="95.0" prefWidth="178.0">
+               <children>
+                  <Label fx:id="idTitre" text="Titre">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="idCat" text="Catégorie">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="Réalisé par :">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="idnomArtiste" text="nomArtiste">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Label fx:id="idWeblog" text="Label" visible="false" />
+            <Label fx:id="idArtiste" text="Label" visible="false" />
+         </children>
+      </HBox>
+      <Rating fx:id="idRating" disable="true">
+         <VBox.margin>
+            <Insets left="12.0" />
+         </VBox.margin>
+         <effect>
+            <ColorAdjust brightness="-0.05" contrast="0.17" />
+         </effect>
+      </Rating>
+      <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="118.0">
+         <children>
+            <HBox prefHeight="42.0" prefWidth="164.0">
+               <children>
+                  <ImageView fx:id="ConsulterWeblog" fitHeight="42.0" fitWidth="46.0" onMouseClicked="#handle_ConsulterWeblog" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/eye.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="SupprimerWeblog" fitHeight="42.0" fitWidth="46.0" onMouseClicked="#handle_supprimerweblog" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/delete-user.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
